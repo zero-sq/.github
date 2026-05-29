@@ -40,9 +40,20 @@ Name a space and start building in about 30 seconds. No install, no launcher, no
 
 - **Browser-native 3D.** WebGPU and WASM. Nothing to download.
 - **One Rust engine, every device.** A clean-slate Rust voxel and terrain engine drives web, iOS, macOS, and Windows.
+- **A world from a seed.** A physics-first engine derives a whole planet, its geology, climate, water, and life, from a 128-bit seed across 16 planet classes. Same seed, same world.
 - **Byte-identical worlds.** The engine is bit-for-bit deterministic across platforms, checked in CI on every change, so every device sees the same world.
 - **Voxels with curves.** Dual Contouring keeps building intuitive (stack and break) while rendering smooth surfaces and sharp edges, not only cubes.
 - **A world that reacts.** A small set of material properties (temperature, mass, hardness, fluidity, reactivity) produces emergent physics. Heat melts stone, fire spreads and structures collapse, water freezes. You discover the rules; we did not script them one by one.
+
+### What we're exploring
+
+A few threads we're pulling on, quietly.
+
+- **3D memory for agents.** AI teammates that remember a space the way you remember a room, by where things are, not by scrolling a transcript. We think a voxel world is the right substrate for it, and we're writing up why.
+- **One renderer, from scratch.** Moving the client onto a single Rust and WebGPU renderer, so what you build looks the same everywhere it runs.
+- **Worlds you can describe.** Tell it what you want, or show it a picture, and it comes back as real, editable voxels, not a flat image.
+
+No roadmap, no hype. We ship it when it is bit-for-bit correct.
 
 ### Open source
 
